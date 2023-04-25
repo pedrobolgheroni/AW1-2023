@@ -1,0 +1,81 @@
+div
+{
+    width: 100%;
+}
+
+.container
+{
+    display: block;
+    background-color:red ;
+    text-align: center;
+    padding: 20px;
+}
+
+.bloco
+{
+    margin: 10px;
+
+}
+
+.linha
+{
+    border:1px blue solid;
+    color: blue;
+    padding: 10px;
+    display: inline;
+}
+
+.button
+{
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 17px;
+    display: inline-block;
+    margin: 10px;
+}
+
+.itens
+{
+    display: flex;
+    background-color: red;
+    grid-template-columns: repeat(3, 50px);
+    padding: 30px;
+    text-align: center;
+}
+
+.item1e3
+{
+    flex: 1;
+    background-color: blue;
+    padding: 20px;
+    margin: 0 10px;
+}
+
+.item2
+{
+    flex: 2;
+    background-color: blue;
+    padding: 20px;
+    margin: 0 10px;
+}
+
+.grid
+{
+    background-color: blueviolet;
+    display: grid;
+    grid-template-columns: repeat(3, 500px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 10px;
+    padding: 20px;
+}
+
+.grid-item
+{
+    background-color: red;
+    text-align: center;
+    color: white;
+    padding: 20px;
+    font-size: 20px;
+}
