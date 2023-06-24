@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap');
+
+body{
+    margin: 0;
+    background: rgb(143, 190, 232);
+    font-family: 'Amatic SC', cursive;
+    font-size: 45px;
+
+}
+
+main{
+    position: relative;
+    top: 1vh;
+    left: 1vw;
+    background-color: rgba(65, 65, 65, 0.799);
+    border-radius: 50px;
+    height: 98vh;
+    width: 98vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.esquerda > h1{
+    color: rgb(31, 33, 34);
+}
+
+.esquerda > img{
+    width: 60%;
+    height: 90%;
+}
+
+.esquerda{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.direita{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card{
+    padding: 30px 35px;
+    background-color: rgb(31, 33, 34);
+    border-radius: 20px;
+    width: 60%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+h4{
+    background: linear-gradient(to right, rgb(241, 241, 241), rgb(143, 190, 232));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 0;
+}
+
+label{
+    color: white;
+    font-size: 30px;
+    margin-top: 30px;
+    text-align: left    ;
+}
+
+input{
+    border-radius: 10px;
+    background-color: rgba(221, 219, 219, 0.726);
+    padding: 15px;
+}
+
+button{
+    border-radius: 10px;
+    background-color: rgba(221, 219, 219, 0.726);
+    padding: 10px;
+    margin: 10px;
+    width: 25vh;
+    font-family: 'Amatic SC', cursive;
+    font-size: 20px;
+    margin-top: 30px;
+    padding: 15px;
+    background: linear-gradient(to right, rgb(190, 192, 221), rgb(143, 190, 232));
+
+    
+
+}
+
+@media only screen and (max-width: 600px){
+    .esquerda > h1{
+        display: none;
+    }
+
+    main{
+        flex-direction: column;
+    }
+
+    .card{
+        width: 100%;
+    }
+
+
+}
