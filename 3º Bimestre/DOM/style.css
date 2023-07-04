@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@200&display=swap');
+
+body{
+    font-family: 'Karla', sans-serif;
+    background: rgb(202, 196, 185);
+    font-size: 20px;
+} 
+
+nav a{
+    color: black;
+}
+
+#aula{
+    /*color: rgb(57, 101, 196);*/
+    color: aquamarine;
+}
+
+#atividade{
+    color: rgb(57, 101, 196);
+}
+
+.html-css{
+    width: 600px;
+    height: 600px;
+}
+
+#js{
+    width: 200px;
+    height: 200px;
+}
+
+#github{
+    width: 100px;
+    height: 100px;
+}
+
+#ifsp{
+    width: 100px;
+    height: 100px;
+}
