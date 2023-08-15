@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Atividade DOM</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+</head>
+
+<body>
+    <header>
+        <h1 n>Atividade DOM</h1>
+        <p>Seja Bem-vindo(a) ao meu site!!</p>
+    </header>
+    <nav> 
+        <ul>
+            <li> <a href="#" name="link"> Início </a></li>
+            <li> <a href="#" name="link"> Sobre </a></li>
+            <li> <a href="#" name="link"> Contato </a></li>
+        </ul>
+    </nav>
+    <main>
+        <h3 id="aula"> Aula de AW1 04/07/2023 </h3>
+        <h3 id="atividade"> Atividade DOM </h3>
+        <h1>Descrição da atividade: </h1>
+        <ol>
+            <li>Faça um site de sua escolha com no mínimo 35 elementos (tags), você deve usar elementos internos </li>
+            <li> Você deve estilizar toda a página, buscando que todos os elementos tenham algum estilo.</li>
+            <li>Montar um diagrama da árvore DOM, a partir do objeto “document”.</li>
+            <li>Alterar 2 estilos de pelo menos 2 elementos de uma das 5 formas de acesso a elemento:</li>
+            <ul>
+                <li>por Marca</li>
+                <li>por ID</li>
+                <li>por Nome</li>
+                <li>por Classe</li>
+                <li>por Seletor</li>
+            </ul>
+            </li>
+        </ol>
+        <br/>
+        <p> Utilizei HTML, CSS e JS para fazer essa atividade </p>
+        <img class="html-css"  src="html-css.png" alt="html e css">
+        <img id="js" src="js.png" alt="javascript">
+    </main>
+    <footer class="rodape">
+        <p>Desenvolvido em 2023</p>
+        <p>&copy</p>
+        <img id="github" src="github.svg" alt="logo github">
+        <img id="ifsp" src="ifsp.png" alt="ifsp">
+    </footer>
+
+    <script>
+        document.getElementById("aula").style.color = "rgb(57, 101, 196)" 
+        document.getElementById("atividade").style.color = "purple" 
+
+        document.getElementsByName("link")[0].style.fontSize = "30px";
+        document.getElementsByName("link")[1].style.fontSize = "30px";
+        document.getElementsByName("link")[2].style.fontSize = "30px";
+
+        document.getElementsByClassName("rodape")[0].style.backgroundColor = "rgb(202, 196, 185)"
+        document.getElementsByClassName("rodape")[0].style.padding = "10px"
+
+        document.getElementsByTagName("a")[0].style.color = "black"
+        document.getElementsByTagName("a")[1].style.color = "black"
+        document.getElementsByTagName("a")[2].style.color = "black"
+
+        document.querySelector("img.html-css").style.width = "600px"
+        document.querySelector("img.html-css").style.height = "600px"
+    </script>
+
+</body>
+
+</html>
