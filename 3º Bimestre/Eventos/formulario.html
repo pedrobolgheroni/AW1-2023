@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <form>
+        <label for="senha">Senha: </label>
+        <input type="password" id="senha">
+        <br><br>
+        <label for="confirma">Confirme a senha: </label>
+        <input type="password" id="confirma">
+        <br> <br>
+        <button type="submit">Enviar</button>
+    </form>
+    
+</body>
+<script>
+    var form = document.querySelector("form")
+    var senha = document.getElementById("senha")
+    var confirma = document.getElementById("confirma")
+
+    form.onsubmit = function (e){
+        if (senha.length < 8 || senha.value != confirma.value){
+            e.preventDefault();
+            alert("Sua senha tem menos que 8 caracteres ou as senhas digitadas são diferentes!")
+        } 
+    }
+</script>
+</html>
