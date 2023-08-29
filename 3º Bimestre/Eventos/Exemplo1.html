@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <button>Mudar a cor!</button>
+        <button>Mudar a cor 2</button>
+        <br><br>
+        <div style="display: flex; align-items: center; width: 100px; height: 100px; border: 2px solid black; border-radius: 10px; justify-content: center; text-align: center;">Clique</div>
+        <br><br>
+        <div style="display: flex; align-items: center; width: 100px; height: 100px; border: 2px solid black; border-radius: 10px; justify-content: center; text-align: center;">Clique</div>
+        <br><br>
+        <div style="display: flex; align-items: center; width: 100px; height: 100px; border: 2px solid black; border-radius: 10px; justify-content: center; text-align: center;">Clique</div>
+        
+        
+        <script>
+            var btn = document.querySelectorAll("button");
+            var div = document.querySelectorAll("div");
+
+            function random(number){
+                return Math.floor(Math.random() * (number + 1));
+            }
+
+            function mudarCor(){
+                var rndCol = "rgb(" + random(255) + "," +random(255)+ "," +random(255) + ")";
+                document.body.style.backgroundColor = rndCol;
+            }
+
+            function divCor(e){
+                var rndCol = "rgb(" + random(255) + "," +random(255)+ "," +random(255) + ")";
+                e.target.style.backgroundColor = rndCol;
+            }
+
+            btn.forEach(btn => btn.onclick = mudarCor);
+            div.forEach(div => div.onclick = divCor);
+
+
+            
+
+
+            
+
+
+        </script>
+    </body>
+</html>
